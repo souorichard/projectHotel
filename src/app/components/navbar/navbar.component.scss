@@ -111,6 +111,12 @@
       a:hover {
         color: #bbb9b9;
       }
+
+
+      a.active-link {
+        color: var(--primaryColor);
+        border-bottom: 2px solid var(--primaryColor);
+      }
     }
   }
 

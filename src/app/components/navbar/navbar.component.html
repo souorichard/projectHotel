@@ -34,7 +34,7 @@
 <nav id="navigation">
   <ul>
     <li *ngFor="let option of options">
-      <a routerLink="{{ option.link }}">
+      <a routerLink="{{ option.link }}" routerLinkActive="active-link" [routerLinkActiveOptions]="{exact:true}">
         <div class="icon">
           <i [ngClass]="option.icon"></i>
         </div>
