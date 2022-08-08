@@ -1,0 +1,47 @@
+<header id="header">
+  <div class="container">
+    <div class="logo">
+      <a routerLink="#">
+        <span class="logo-name">{{ logo }}</span>
+      </a>
+    </div>
+    <div class="menu">
+      <ul>
+        <li>
+          <a routerLink="#">
+            <div class="menuIcon">
+              <i class="bx bx-chat"></i>
+            </div>
+            <div class="menuTitle">
+              <span>Ajuda</span>
+            </div>
+          </a>
+        </li>
+        <li>
+          <a routerLink="#">
+            <div class="menuIcon">
+              <i class="bx bx-menu"></i>
+            </div>
+            <div class="menuTitle">
+              <span>Menu</span>
+            </div>
+          </a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</header>
+<nav id="navigation">
+  <ul>
+    <li *ngFor="let option of options">
+      <a routerLink="{{ option.link }}">
+        <div class="icon">
+          <i [ngClass]="option.icon"></i>
+        </div>
+        <div class="title">
+          <span>{{ option.name }}</span>
+        </div>
+      </a>
+    </li>
+  </ul>
+</nav>

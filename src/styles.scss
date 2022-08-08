@@ -1,1 +1,183 @@
 /* You can add global styles to this file, and also import other style files */
+@import url('https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,90&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins';
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  overflow-x: hidden;
+}
+
+ul {
+  display: flex;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+:root {
+  //Theme
+  --primary: #11101d;
+  --secondary: #0f0e1a;
+  --tertiary: #292834;
+
+  //Font
+  --primaryColor: #fff;
+  --secondaryColor: #acacac;
+  --tertiaryColor: #888;
+
+  //Shadow
+  --shadow: rgba(0, 0, 0, .8);
+}
+
+.main {
+  width: 100vw;
+  min-height: 100vh;
+  background-color: var(--primary);
+}
+
+.banner {
+  position: absolute;
+  top: 120px;
+  left: 0;
+  width: 100%;
+  height: 400px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-size: cover;
+  background-position: center;
+
+  .searchBox {
+    position: absolute;
+    top: 40px;
+    width: 70%;
+    height: auto;
+    padding: 3rem;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    background-color: var(--secondary);
+    border-radius: 15px;
+
+    .searchTitle {
+      display: flex;
+      align-items: center;
+      margin-bottom: 2em;
+
+      span {
+        font-size: 30px;
+        font-weight: 600;
+        text-transform: uppercase;
+        color: var(--primaryColor);
+      }
+    }
+
+    .searchInputs {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-end;
+
+      .inputs:nth-child(1) {
+        width: 480px;
+      }
+
+      .inputs:nth-child(2) {
+        width: 230px;
+
+        .inputBox {
+          display: flex;
+
+          .datePicker {
+            display: flex;
+
+            input {
+              width: 55%;
+              border-right: 1px solid var(--tertiary);
+            }
+
+            input:nth-child(2) {
+              width: 45%;
+              padding: 12px;
+              border-left: 1px solid var(--tertiary);
+            }
+          }
+        }
+      }
+
+      .inputs:nth-child(3) {
+        width: 230px;
+      }
+
+      .inputs {
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+
+        span {
+          font-size: .7rem;
+          color: var(--tertiaryColor);
+          margin-bottom: .4rem;
+        }
+
+        .inputBox {
+          position: relative;
+          width: 100%;
+          height: 100%;
+          border-radius: 10px;
+          border: 2px solid var(--tertiary);
+
+          .bx {
+            position: absolute;
+            top: 13px;
+            left: 8px;
+            font-size: 1.5rem;
+            color: var(--tertiaryColor);
+          }
+
+          input {
+            width: 100%;
+            height: 100%;
+            padding: 12px 12px 12px 40px;
+            background-color: transparent;
+            font-size: .98rem;
+            font-style: italic;
+            color: var(--primaryColor);
+            border: none;
+            outline: none;
+          }
+        }
+      }
+
+      button {
+        height: 54px;
+        padding: 12px 20px;
+        text-align: center;
+        background-color: var(--tertiary);
+        border-radius: 10px;
+        border: 2px solid var(--tertiary);
+        box-shadow: -5px 10px 20px var(--shadow);
+        cursor: pointer;
+
+        span {
+          font-size: 16px;
+          font-weight: 500;
+          text-transform: uppercase;
+          color: var(--primaryColor);
+        }
+      }
+    }
+  }
+}
+
