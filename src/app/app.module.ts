@@ -10,7 +10,7 @@ import { NavbarComponent } from './components/navbar/navbar.component';
   declarations: [
     AppComponent,
     FooterComponent,
-    NavbarComponent
+    NavbarComponent,
   ],
   imports: [
     BrowserModule,

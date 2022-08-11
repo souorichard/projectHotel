@@ -184,3 +184,13 @@ a {
     }
   }
 }
+
+
+//Responsive Website
+@media (max-width: 1600px) {
+  .banner {
+    .searchBox {
+      width: 80%;
+    }
+  }
+}

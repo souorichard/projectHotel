@@ -13,7 +13,6 @@
 .paymentsContainer {
   width: 70%;
   height: 100%;
-  padding: 10px;
   display: flex;
   justify-content: space-between;
   flex-direction: column;
@@ -51,4 +50,17 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+
+  img {
+    border-radius: 50%;
+  }
+}
+
+
+@media (max-width: 1600px) {
+  #footer {
+    .paymentsContainer {
+      width: 80%;
+    }
+  }
 }

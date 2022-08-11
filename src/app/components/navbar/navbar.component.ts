@@ -15,7 +15,7 @@ export class NavbarComponent implements OnInit {
     { link: '/voo', icon: 'bx bxs-plane-alt', name: 'Voos' },
     { link: '/pacote', icon: 'bx bxs-package', name: 'Pacotes' },
     { link: '/oferta', icon: 'bx bxs-star', name: 'Top Ofertas' },
-    { link: '/carro', icon: 'bx bxs-car', name: 'Aluguel de Carros' },
+    { link: '/car', icon: 'bx bxs-car', name: 'Aluguel de Carros' },
     { link: '/seguro', icon: 'bx bxs-check-shield', name: 'Seguro Viagem' },
   ];
 
