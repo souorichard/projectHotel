@@ -119,5 +119,37 @@
       }
     }
   }
+}
+
+
+@media (max-width: 1600px) {
+
+  #header {
+    .container {
+      width: 80%;
+    }
+  }
+
+  #navigation {
+    ul {
+      width: 80%;
+    }
+  }
+
+}
+
+@media (max-width: 1400px) {
+
+  #header {
+    .container {
+      width: 90%;
+    }
+  }
+
+  #navigation {
+    ul {
+      width: 90%;
+    }
+  }
 
 }
